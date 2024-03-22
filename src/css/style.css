@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+:root{
+    --azul-general: #181E4B;
+    --color-texto: #FFFFFF;
+}
+
+.body{
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul-general);
+    color: var(--color-texto);
+    align-items: center;
+}
+
+.header__h1{
+    font-size: 2em; /* Tamaño de fuente similar al h1 */
+    font-weight: bold; /* Negrita como el h1 */
+    margin: 0.50em 0.60em 0.70em 0.80em;
+}
+
+.nav__a{
+    color: var(--color-texto);
+    padding: 0px 15px;
+    font-size: 1.1em;
+}
+
+a :hover{
+    color: #181E4B ;
+}
+
