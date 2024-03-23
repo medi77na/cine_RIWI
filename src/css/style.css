@@ -2,64 +2,165 @@
 
 /*-----  VARIABLES  -----*/
 
-:root{
-    --azul-general: #181E4B;
-    --color-texto: #FFFFFF;
+:root {
+    --color-general: #E3B505;
+    --color-texto: #044B7F;
+    --color-fondo: #95190C;
+    --hover-texto: #044B7F;
 }
 
-.body{
+/*-----  BODY  -----*/
+
+.body {
     font-family: "Overlock SC", sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     font-style: normal;
+    background-color: var(--color-fondo);
 }
 
 /*-----  HEADER  -----*/
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--azul-general);
+    background-color: var(--color-general);
     color: var(--color-texto);
     align-items: center;
 }
 
-.header__h1{
-    font-size: 2em; /* Tamaño de fuente similar al h1 */
-    font-weight: bold; /* Negrita como el h1 */
+.header__h1 {
+    font-size: 2em;
+    /* Tamaño de fuente similar al h1 */
+    font-weight: bold;
+    /* Negrita como el h1 */
     margin: 0.50em 0.60em 0.70em 0.80em;
 }
 
-.nav__a{
+.nav__a {
     color: var(--color-texto);
     padding: 0px 15px;
     font-size: 1.1em;
 }
-
-a :hover{
-    color: #181E4B ;
+.nav__a:hover {
+    color: #95190C;;
 }
 
 /*-----  MAIN  -----*/
-
 .section{
     display: flex;
-    flex-flow: row wrap;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
-
+    margin: 5%;
 }
 
-.section__article{
-    display: flex;
-    justify-content: center;
-    width: 45%;
-    margin: 1px;
+.h2{
+    font-size: 1.4em;
+    /* Tamaño de fuente similar al h1 */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-texto);
 }
 
-.section__img{
+.p{
+    font-size: 1.1em;
+    text-align: justify;
+    color: var(--color-general);
+}
+
+/*----- ESTRENOS -----*/
+.section--estrenos{
+    margin: 50px 0px;
+}
+
+.section__article--estrenos{
+    width: 35%;
+    
+}
+
+.section__img--estrenos{
     width: 100%;
     height: 100%;
 }
+
+/*----- CARTELERA -----*/
+.h2--cartelera{
+    font-size: 1.8em;
+    /* Tamaño de fuente similar al h1 */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-texto);
+}
+
+.section--cartelera{
+    display: flex;
+}
+
+.section__article--cartelera{
+    max-width: 28%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.section__article--cartelera:hover{
+    background-color: rgba(0, 0, 0, 0.2);    
+    border: 2px solid var(--color-general);
+    border-radius: 10px;
+}
+
+.article__img--cartelera{
+    width: 100%;
+    height: 82%;
+}
+
+.article__p--cartelera{
+    padding-bottom: 15px;
+}
+
+/*----- CONTACTO -----*/
+.section--contacto{
+    display: flex;
+    justify-content: center;
+    align-content:center ;
+    margin-bottom: 30px
+}
+
+.form__div{
+    width: 100%;
+    margin: 7px;
+}
+
+.div__input{
+    width: 100%;
+    height: 30px;
+}
+
+.div__textarea{
+    width: 100%;
+}
+
+.div__button{
+    width: 100%;
+    height: 27px;
+}
+
+.div__button:hover{
+    background-color: var(--color-fondo);
+    color: var(--color-general);
+    border: 2px solid var(--color-general);
+}
+
+/*FOOTER*/
+
+.section__footer{
+    margin: 0px;
+    height: 70px;
+    align-items: center;
+    background-color: var(--color-general);
+    color: var(--color-fondo);
+}
+
 
 
